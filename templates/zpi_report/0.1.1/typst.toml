@@ -1,0 +1,16 @@
+[package]
+name = "zpi_report"
+version = "0.1.1"
+entrypoint = "template.typ"
+authors = ["Tomasz Gadziński"]
+license = "MIT"
+description = "ZPI report template"
+repository = "https://github.com/zpi-loris/docs"
+categories = ["paper"]
+disciplines = ["engineering", "computer-science"]
+exclude = []
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "example.png"
