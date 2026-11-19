@@ -7,18 +7,7 @@
   project_logo: image("./assets/loris_logo.png", width: 2cm),
   zpi_logo: image("./assets/ZPI-Day-cmyk.pdf", width: 2cm),
   lang: "pl",
-  abstract: [Jednym z głównych problemów nadzoru i automatyzacji upraw
-    rolniczych jest ograniczona możliwość komunikacji oraz brak dostępu do
-    zasilania na rozległych połaciach terenu. Problem ten można rozwiązać z
-    wykorzystaniem nowoczesnych technologii, opartych na technice modulacji LoRa,
-    która niewielkim kosztem energetycznym potrafi przesyłać dane na dalekie
-    dystanse. W tym celu wytworzyliśmy gotowy do użytku system, obejmujący swym
-    zakresem cały proces komunikacji LoRa: od urządzeń końcowych, przez bramki,
-    serwer, aż po klienta oraz jego interfejs. Efektem jest możliwość nadzoru
-    upraw rolniczych na odległych dystansach oraz dokonywanie automatyzacji.
-    System jest dowolnie rozbudowywalny oraz agnostyczny względem urządzeń
-    końcowych , co pozwala na jego wykorzystanie w rozmaitych obszarach - nie
-    tylko w rolnictwie.],
+  abstract: [],
   authors: (
     "Wojciech Burda",
     "Tomasz Gadziński",
