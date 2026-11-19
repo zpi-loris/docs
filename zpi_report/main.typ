@@ -33,8 +33,7 @@
 = Wprowadzenie
 
 = Prace związane z tematem
-Dostępne na rynku systemy zdalnej rozproszonej automatyki, takie jak popularne
-otwartoźródłowe i wolne oprogramowanie o nazwie _Home Assistant_ opierają się w
+Dostępne na rynku systemy zdalnej rozproszonej automatyki opierają się w
 większości na technologiach krótkodystansowych (np. Bluetooth LE, ZigBee) lub
 energochłonnych (np. 5G, WiFi), które do działania wymagają odpowiedniej
 infrastruktury i stałego źródła zasilania. Rozwiązaniem umożliwiającym
