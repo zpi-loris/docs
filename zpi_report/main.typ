@@ -11,16 +11,16 @@
     rolniczych jest ograniczona możliwość komunikacji oraz brak dostępu do
     zasilania na rozległych połaciach terenu. Problem ten można rozwiązać z
     wykorzystaniem nowoczesnych technologii, opartych na technice modulacji LoRa,
-    która niewielkim kosztem energetycznym potrafi przesyłać dane na dalekie
-    dystanse. W tym celu, wspierając się otwartym oprogramowaniem, wytworzyliśmy
-    gotowy do użytku system, obejmujący swym zakresem pełną ścieżkę komunikacji w
-    standardzie LoRaWAN: od urządzeń końcowych, przez bramki, serwer, aż po
-    klienta oraz jego interfejs. Efektem wytworzonego systemu jest udostępnienie
-    możliwości monitorowania oraz automatyzacji na dużych dystansach (ok. 3 km),
-    co pozwala na efektywniejszą kontrolę nad uprawami oraz oszczędność czasu i
-    środków. System jest otwarty oraz agnostyczny względem urządzeń końcowych, co
-    pozwala na jego wykorzystanie w rozmaitych obszarach - nie tylko w
-    rolnictwie.],
+    która niewielkim kosztem energetycznym pozwala na przesyłanie danych na
+    dalekie dystanse. W tym celu, wspierając się otwartym oprogramowaniem,
+    wytworzyliśmy gotowy do użytku system, obejmujący swym zakresem pełną ścieżkę
+    komunikacji w standardzie LoRaWAN: od urządzeń końcowych, przez bramki,
+    serwer, aż po aplikację kliencką oraz jej interfejs. Efektem wytworzonego
+    systemu jest udostępnienie możliwości monitorowania oraz automatyzacji na
+    dużych dystansach (ok. 3 km), co pozwala na efektywniejszą kontrolę nad
+    uprawami oraz oszczędność czasu i środków. System jest otwarty oraz
+    agnostyczny względem urządzeń końcowych, co pozwala na jego wykorzystanie w
+    rozmaitych obszarach - nie tylko w rolnictwie.],
   authors: (
     "Wojciech Burda",
     "Tomasz Gadziński",
