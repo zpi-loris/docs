@@ -32,19 +32,41 @@
 
 = Wprowadzenie
 
-= Test
+= Prace związane z tematem
+Dostępne na rynku systemy zdalnej rozproszonej automatyki, takie jak popularne
+otwartoźródłowe i wolne oprogramowanie o nazwie _Home Assistant_ opierają się w
+większości na technologiach krótkodystansowych (np. Bluetooth LE, ZigBee) lub
+energochłonnych (np. 5G, WiFi), które do działania wymagają odpowiedniej
+infrastruktury i stałego źródła zasilania. Rozwiązaniem umożliwiającym
+połączenie energooszczędności z długodystansowym transferem danych jest
+technologia radiowa LoRa oraz oparty na niej protokół komunikacyjny LoRaWAN.
+Alternatywne technologie LPWAN (ang. _Low-Power Wide-Area Network_), jak np.
+NB-IoT i LTE-M wymagają stałych opłat abonamentowych, ponieważ oparte są na
+sieci komórkowej. Z kolei komercyjne platformy automatyzacji dla rolnictwa (np.
+_iMETOS_, _Libelium_) to rozwiązania drogie, zamknięte i skupione na pasywnej
+telemetrii.
 
-#lorem(30)
+Projekt _loris_ wyróżnia się na tle istniejących rozwiązań połączeniem
+niskokosztowej, otwartej architektury opartej na LoRaWAN z dwukierunkową
+automatyką opartą na silniku reguł sterowanym zdarzeniami. System umożliwia
+zdalne sterowanie elementami wykonawczymi, np.: jazami, śluzami, elektrozaworami
+i pompami, w oparciu o zbierane dane.
 
-== Test test
+== Główne założenia i ograniczenia projektowe
+=== Komunikacja i regulacje prawne
+Protokół LoRaWAN w Europie wykorzystuje nielicencjonowane pasmo radiowe 868 MHz,
+którego wykorzystanie jest prawnie znacząco ograniczone. Z tego powodu w
+projekcie wykorzystano format wymiany danych _Protocol Buffers_, który pozwala
+na efektywną serializację wiadomości strukturalnych @viotti2022benchmark, aby
+zmaksymalizować wydajność systemu i zminimalizować czas transmisji.
+=== Zasilanie i zasięg
+Założono zasięg transmisji do 3 km na terenie otwartym przy braku dostępu do
+sieci energetycznej -- urządzenia końcowe mogą wykorzystywać tryby głębokiego
+uśpienia oraz być przez długi czas zasilane bateryjnie.
+=== Otwartość
+System jest otwarty i pozwala na jego proste rozbudowywanie oraz wytwarzanie i
+dodawanie urządzeń końcowych dostosowanych do konkretnych potrzeb użytkowników.
 
-#lorem(20)
-
-== Test test 2
-
-#lorem(20)
-
-// Add bibliography and create Bibiliography section
 #bibliography("bibliography.bib", full: true)
 
 
