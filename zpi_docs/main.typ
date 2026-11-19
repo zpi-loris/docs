@@ -2,10 +2,10 @@
 #show: zpi_docs.with(
   title: "Bezprzewodowy system IoT do monitoringu parametrów środowiskowych i nadzoru upraw rolniczych bazujących na technologii LoRa ",
   authors: (
+    "Wojciech Burda",
+    "Tomasz Gadziński",
     "Jan Kubów",
     "Karol Wołkowski",
-    "Tomasz Gadziński",
-    "Wojciech Burda",
   ),
   keywords: ("kw1", "kw2", "kw3"),
   mentor: "Dr Piotr Jóźwiak",
