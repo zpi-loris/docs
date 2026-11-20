@@ -22,7 +22,7 @@
 = Wstęp
 
 Nadzór i automatyzacja upraw rolniczych wymagają stałego dostępu do danych z
-pola, takich jak wilgotność gleby, temperatura czy stan urządzeń
+terenu, takich jak wilgotność gleby, temperatura czy stan urządzeń
 nawadniających. Pola zajmują jednak rozległe obszary, na których zwykle nie ma
 ani infrastruktury sieciowej, ani zasilania. W efekcie kontrola upraw często
 opiera się na osobistej inspekcji terenu, co pochłania czas i środki, a reakcja
