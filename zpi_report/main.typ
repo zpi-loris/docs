@@ -32,7 +32,34 @@
 #set cite(style: "chicago-author-date")
 #show link: underline
 
-= Wprowadzenie
+= Wstęp
+
+Nadzór i automatyzacja upraw rolniczych wymagają stałego dostępu do danych z
+terenu, takich jak wilgotność gleby, temperatura czy stan urządzeń
+nawadniających. Pola zajmują jednak rozległe obszary, na których zwykle nie ma
+ani infrastruktury sieciowej, ani zasilania. W efekcie kontrola upraw często
+opiera się na osobistej inspekcji terenu, co pochłania czas i środki, a reakcja
+na zmiany warunków bywa spóźniona.
+
+Popularne technologie bezprzewodowe nie rozwiązują tego problemu w pełni. Wi-Fi
+i Bluetooth mają zasięg ograniczony do kilkudziesięciu metrów, a sieci
+komórkowe wymagają abonamentu i zużywają więcej energii, co utrudnia zasilanie
+urządzeń z baterii lub niewielkiego panelu słonecznego. Odpowiedzią na te
+ograniczenia jest modulacja LoRa, która umożliwia przesyłanie niewielkich
+ilości danych na duże odległości przy bardzo niskim poborze energii. Na jej
+bazie powstał protokół LoRaWAN, opisujący całą ścieżkę komunikacji: od
+urządzeń końcowych, przez bramki, aż po serwer sieciowy i aplikację kliencką.
+
+Celem projektu było opracowanie systemu opartego na LoRaWAN i otwartym
+oprogramowaniu, który:
+- umożliwi monitorowanie i sterowanie urządzeniami na dystansie ok. 3 km w
+  obszarze niezabudowanym, co pozwoli na automatyzację części pracy wykonywanej
+  przez rolnika,
+- urządzenia końcowe będą działać przy niskim zużyciu energii, co pozwoli na
+  wdrożenie ich na obszarach bez zasilania sieciowego,
+- będzie niezależne od typu urządzeń końcowych, co pozwoli na wykorzystanie go
+  także poza rolnictwem.
+
 
 = Prace związane z tematem
 Dostępne na rynku systemy zdalnej rozproszonej automatyki opierają się w
