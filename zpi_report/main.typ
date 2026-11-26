@@ -147,6 +147,39 @@ technologii 3D obudowa.
     ]
   ]
 ]
+
+==== Irygator roślin
+Główną odpowiedzialnością tego urządzenia jest irygacja roślin za pomocą pompy
+perystaltycznej w sposób zautomatyzowany przez system. Jego praca jest ściśle
+powiązana z monitorem roślin -- na podstawie mierzonych przez niego warunków
+środowiskowych silnik automatyzacji podejmuje decyzje o podlewaniu.
+
+#align(center)[
+  #figure(
+    supplement: [Rysunek],
+    caption: [Schemat elektroniczny irygatora roślin],
+  )[
+    #image("assets/plant_irrigator_schematic.pdf")
+  ]
+]
+
+Układ nie udostępnia żadnych danych, a jedynie zapewnia możliwość uruchomienia
+pompy perystaltycznej na określony czas. Do urządzenia, podobnie jak w przypadku
+monitora, również została zaprojektowana obudowa.
+
+#align(center)[
+  #figure(
+    supplement: [Rysunek],
+    caption: [Układ irygatora (po lewej); w obudowie (po prawej)],
+  )[
+    #columns(2)[
+      #image("assets/placeholder.svg")
+      #colbreak()
+      #image("assets/placeholder.svg")
+    ]
+  ]
+]
+
 == Bramka LoRaWAN
 Jednym z kluczowych elementów zaprojektowanym w ramach projektu jest bramka
 LoRaWAN oparta na otwartoźródłowym oprogramowaniu ChirpStack działająca na
