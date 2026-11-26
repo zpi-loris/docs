@@ -97,7 +97,6 @@ dodawanie urządzeń końcowych dostosowanych do konkretnych potrzeb użytkownik
 
 = Rezultaty
 
-== Architektura aplikacji
 #figure(image("assets/placeholder.svg", width: 50%), caption: [Diagram architektury aplikacji])
 #lorem(100)
 
