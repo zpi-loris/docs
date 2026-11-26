@@ -117,7 +117,7 @@ jako jednego z najbezpieczniejszych i najbardziej niezawodnych systemów czasu
 rzeczywistego@zephyr_turns_10.
 
 === Framework
-Począwszy od pisania oprogramowania urządzeń końcowych wyspecjalizowanych dla
+W trakcie pisania oprogramowania urządzeń końcowych wyspecjalizowanych dla
 zastosowań rolniczych, podjęliśmy decyzję, aby wytworzyć framework, który
 pozwoli na stosunkowo prostą integrację dowolnych urządzeń końcowych z pełnym
 systemem _loris_. W ten sposób nasz system stał się de facto agnostyczny
