@@ -103,6 +103,17 @@ W ramach projektu wytworzony został framework do tworzenia oprogramowania dla
 urządzeń końcowych zgodnego z pełnym systemem _loris_. Framework oparty jest na
 systemie operacyjnym czasu rzeczywistego Zephyr.
 
+=== Moduł LoRaWAN
+Ważnym elementem frameworku jest moduł LoRaWAN zapewniający łatwą
+konfigurację parametrów protokołu oraz uruchomienie całego wymaganego stosu
+oprogramowania.
+
+Dla potrzeb tego komponentu opracowany został dodatkowo moduł pamięci nieulotnej
+bazowany na systemie Zephyr Memory Storage@zephyr_zms_docs. Wyróżnia się on
+wykorzystaniem wyrównywania zużycia (ang. _wear leveling_), co zapewnia
+najwyższą możliwą żywotność różnych rodzajów pamięci, dzięki czemu framework
+odpowiednio wspiera różne systemy na czipie (ang. _SoC_ -- _system on a chip_) i
+płytki uruchomieniowe.
 == Bramka LoRaWAN
 Jednym z kluczowych elementów zaprojektowanym w ramach projektu jest bramka
 LoRaWAN oparta na otwartoźródłowym oprogramowaniu ChirpStack działająca na
