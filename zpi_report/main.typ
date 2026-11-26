@@ -128,9 +128,10 @@ zgodnie z przeznaczeniem własnego urządzenia.
 
 Na szerokości pasma całego systemu komunikacja odbywa się za pomocą Protobufa
 -- bardzo _lekkiego_ formatu danych, pozwalającego na serializację
-ustrukturyzowanych danych. Wywołując API, framework automatycznie serializuje
-dane do typu Protobuf, po czym przesyła je dalej, wykorzystując do tego
-dalekosiężną technologię radiową *LoRa* oraz protokół LoRaWAN.
+ustrukturyzowanych danych @protobuf_docs. Wywołując API, framework
+automatycznie serializuje dane do typu Protobuf, po czym przesyła je dalej,
+wykorzystując do tego dalekosiężną technologię radiową *LoRa* oraz protokół
+LoRaWAN.
 
 
 == Bramka LoRaWAN
