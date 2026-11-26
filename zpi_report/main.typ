@@ -106,7 +106,7 @@ systemie operacyjnym czasu rzeczywistego Zephyr.
 == Bramka LoRaWAN
 Jednym z kluczowych elementów zaprojektowanym w ramach projektu jest bramka
 LoRaWAN oparta na otwartoźródłowym oprogramowaniu ChirpStack działająca na
-komputerze RaspberryPi 5. Aby umożliwić pracę z technologią radiową LoRa do
+komputerze jednopłytkowym RaspberryPi 5. Aby umożliwić pracę z technologią radiową LoRa do
 komputera dołączony został moduł WM1302 firmy Seeed Studio oparty na chipie
 Semtech SX1302.
 
