@@ -103,6 +103,50 @@ W ramach projektu wytworzony został framework do tworzenia oprogramowania dla
 urządzeń końcowych zgodnego z pełnym systemem _loris_. Framework oparty jest na
 systemie operacyjnym czasu rzeczywistego Zephyr.
 
+=== Przykłady urządzeń końcowych
+Aby w pełni przetestować wdrożenie projektu przygotowane zostały trzy
+przykładowe urządzenia końcowe. Demonstrują one najważniejsze możliwości systemu
+oraz ogólny sposób integracji urządzeń z jego pozostałymi elementami. Do każdego
+urządzenia wykonane zostały schematy elektroniczne oraz przykładowe aplikacje w
+systemie Zephyr.
+
+==== Monitor roślin
+Celem tego urządzenia jest monitorowanie parametrów środowiskowych roślin, aby
+na ich podstawie system mógł podejmować decyzje, jak np. automatyzacja
+podlewania.
+
+#align(center)[
+  #figure(supplement: [Rysunek], caption: [Schemat elektroniczny monitora
+    roślin])[
+    #image("assets/plant_monitor_schematic.pdf")
+  ]
+]
+
+Urządzenie udostępnia dane z następujących podzespołów:
+- czujnika temperatury otoczenia,
+- sondy temperatury gleby,
+- czujnika wilgotności gleby.
+
+Dodatkowo, układ zapewnia poniższe elementy wykonawcze, które mogą być sterowane
+przez serwer automatyzacji i służyć m.in. do alarmowania wizualnego i
+dźwiękowego:
+- LEDy w kolorach: zielonym, żółtym i czerwonym,
+- brzęczek.
+
+W celu zabezpieczenia urządzenia została również przygotowana i wydrukowana w
+technologii 3D obudowa.
+#align(center)[
+  #figure(
+    supplement: [Rysunek],
+    caption: [Układ monitora (po lewej); w obudowie (po prawej)],
+  )[
+    #columns(2)[
+      #image("assets/placeholder.svg")
+      #colbreak()
+      #image("assets/placeholder.svg")
+    ]
+  ]
+]
 == Bramka LoRaWAN
 Jednym z kluczowych elementów zaprojektowanym w ramach projektu jest bramka
 LoRaWAN oparta na otwartoźródłowym oprogramowaniu ChirpStack działająca na
