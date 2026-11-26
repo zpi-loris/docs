@@ -104,11 +104,12 @@ urządzeń końcowych zgodnego z pełnym systemem _loris_. Framework oparty jest
 systemie operacyjnym czasu rzeczywistego Zephyr.
 
 === Przykłady urządzeń końcowych
-Aby w pełni przetestować wdrożenie projektu przygotowane zostały trzy
-przykładowe urządzenia końcowe. Demonstrują one najważniejsze możliwości systemu
-oraz ogólny sposób integracji urządzeń z jego pozostałymi elementami. Do każdego
-urządzenia wykonane zostały schematy elektroniczne oraz przykładowe aplikacje w
-systemie Zephyr.
+Aby w pełni przetestować wdrożenie projektu, przygotowane zostały trzy
+przykładowe jednostki końcowe. Demonstrują one najważniejsze możliwości systemu
+oraz ogólny sposób integracji urządzeń z jego pozostałymi elementami. Do każdej
+z nich wykonane zostały schematy elektroniczne oraz przykładowe aplikacje w
+systemie Zephyr, dzięki czemu mogą również służyć jako wzorce wytwarzania
+własnych urządzeń dla potencjalnych użytkowników systemu.
 
 ==== Monitor roślin
 Celem tego urządzenia jest monitorowanie parametrów środowiskowych roślin, aby
