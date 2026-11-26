@@ -124,15 +124,15 @@ projektu, jak i pamięci operacyjnej)@nanopb_docs, zatem system może być
 wykorzystany również na urządzeniach o bardzo ograniczonych zasobach.
 
 == Bramka LoRaWAN
-Jednym z kluczowych elementów zaprojektowanym w ramach projektu jest bramka
+Jednym z kluczowych elementów zaprojektowanych w ramach projektu jest bramka
 LoRaWAN oparta na otwartoźródłowym oprogramowaniu ChirpStack działająca na
-komputerze jednopłytkowym RaspberryPi 5. Aby umożliwić pracę z technologią radiową LoRa do
-komputera dołączony został moduł WM1302 firmy Seeed Studio oparty na chipie
-Semtech SX1302.
+komputerze jednopłytkowym RaspberryPi 5. Aby umożliwić pracę z technologią
+radiową LoRa do komputera dołączony został moduł WM1302 firmy Seeed Studio
+oparty na chipie Semtech SX1302.
 
 Do obsługi bramki zostały wytworzone obrazy Docker oraz skrypty wdrażające, aby
-umożlwić szybkie i powtarzalne uruchamianie pełnego środowiska bramki, na które
-składa się przede wszystkim oprogramowanie ChirpStack MQTT Forwarder oraz
+umożlwić szybkie i powtarzalne uruchamianie pełnego środowiska bramki. Składa
+się ono przede wszystkim z oprogramowania ChirpStack MQTT Forwarder oraz
 ChirpStack Concentratord@chirpstack_docs.
 
 Dodatkowo, w celach wdrożeniowych, została zaprojektowana i wydrukowana w
@@ -140,9 +140,10 @@ technologii 3D obudowa do komputera bramki. Autorski projekt uwzględnia potrzeb
 komunikacji radiowej LoRa oraz systemu GPS wykorzystywanego przez
 LoRaWAN@lorawan_spec.
 
-#align(center)[
-  #figure(supplement: [Rysunek], caption: [Wytworzona obudowa komputera
-    bramki])[
+#align(center)[ #figure(
+    supplement: [Rysunek],
+    caption: [Wytworzona obudowa komputera bramki],
+  )[
     #image("assets/placeholder.svg", width: 50%)
   ]
 ]
