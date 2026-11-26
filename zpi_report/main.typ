@@ -96,7 +96,10 @@ System jest otwarty i pozwala na jego proste rozbudowywanie oraz wytwarzanie i
 dodawanie urządzeń końcowych dostosowanych do konkretnych potrzeb użytkowników.
 
 = Rezultaty
-W projekcie udało zrealizować się wszystkie planowane funkcjonalności systemu.
+
+== Architektura aplikacji
+#figure(image("assets/placeholder.svg", width: 50%), caption: [Diagram architektury aplikacji])
+#lorem(100)
 
 == Urządzenia końcowe
 W ramach projektu wytworzony został framework do tworzenia oprogramowania dla
