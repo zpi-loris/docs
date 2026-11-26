@@ -114,6 +114,15 @@ wykorzystaniem wyrównywania zużycia (ang. _wear leveling_), co zapewnia
 najwyższą możliwą żywotność różnych rodzajów pamięci, dzięki czemu framework
 odpowiednio wspiera różne systemy na czipie (ang. _SoC_ -- _system on a chip_) i
 płytki uruchomieniowe.
+
+=== Moduł kodeku wiadomości
+Do celów transmisji danych wykorzystywany jest autorski moduł kodowania i
+dekodowania (kodek) do formatu _Protocol Buffers_ oparty na bibliotece Nanopb.
+Została ona stworzona specjalnie z myślą o systemach wbudowanych i zapewnia
+minimalny narzut pamięciowy (zarówno w skompilowanym artefakcie binarnym
+projektu, jak i pamięci operacyjnej)@nanopb_docs, zatem system może być
+wykorzystany również na urządzeniach o bardzo ograniczonych zasobach.
+
 == Bramka LoRaWAN
 Jednym z kluczowych elementów zaprojektowanym w ramach projektu jest bramka
 LoRaWAN oparta na otwartoźródłowym oprogramowaniu ChirpStack działająca na
