@@ -96,12 +96,45 @@ System jest otwarty i pozwala na jego proste rozbudowywanie oraz wytwarzanie i
 dodawanie urządzeń końcowych dostosowanych do konkretnych potrzeb użytkowników.
 
 = Rezultaty
-W projekcie udało zrealizować się wszystkie planowane funkcjonalności systemu.
+
+#figure(image("assets/placeholder.svg", width: 50%), caption: [Diagram architektury aplikacji])
+#lorem(100)
 
 == Urządzenia końcowe
 W ramach projektu wytworzony został framework do tworzenia oprogramowania dla
 urządzeń końcowych zgodnego z pełnym systemem _loris_. Framework oparty jest na
-systemie operacyjnym czasu rzeczywistego Zephyr.
+systemie operacyjnym czasu rzeczywistego *Zephyr*, rozwijanego pod patronatem The
+Linux Foundation.
+
+Wybór Zephyra jako środowiska, w którym powstanie oprogramowanie urządzeń
+końcowych podyktowany był wymogiem wielowątkowości oraz nadawania priorytetów
+poszczególnym zadaniom (co pozwoliło na priorytetyzowanie zadań krytycznych,
+szczególnie ważnych w komunikacji bezprzewodowej). Dodatkowo Zephyr oferuje
+wiele gotowych modułów, które można zintegrować z własnym projektem. W ten
+sposób we frameworku _loris_ wykorzystany został m.in. moduł protokołu LoRaWAN.
+Istotną zaletą Zephyra jest także jego ugruntowana pozycja na rynku embedded
+jako jednego z najbezpieczniejszych i najbardziej niezawodnych systemów czasu
+rzeczywistego@zephyr_turns_10.
+
+=== Framework
+W trakcie pisania oprogramowania urządzeń końcowych wyspecjalizowanych dla
+zastosowań rolniczych, podjęliśmy decyzję, aby wytworzyć framework, który
+pozwoli na stosunkowo prostą integrację dowolnych urządzeń końcowych z pełnym
+systemem _loris_. W ten sposób nasz system stał się de facto agnostyczny
+względem urządzeń końcowych i zastosowań w świecie rzeczywistym, co pozwala na
+jego wszechstronne wykorzystanie.
+
+Aby zintegrować własne urządzenie z systemem _loris_ należy skorzystać z
+zaledwie trzech funkcji udostępnianych przez API frameworku i wypełnić je
+zgodnie z przeznaczeniem własnego urządzenia.
+
+Na szerokości pasma całego systemu komunikacja odbywa się za pomocą Protobufa
+-- bardzo _lekkiego_ formatu danych, pozwalającego na serializację
+ustrukturyzowanych danych @protobuf_docs. Wywołując API, framework
+automatycznie serializuje dane do typu Protobuf, po czym przesyła je dalej,
+wykorzystując do tego dalekosiężną technologię radiową *LoRa* oraz protokół
+LoRaWAN.
+
 
 === Moduł LoRaWAN
 Ważnym elementem frameworku jest moduł LoRaWAN zapewniający łatwą
