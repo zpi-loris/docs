@@ -27,9 +27,9 @@
     "Jan Kubów",
     "Karol Wołkowski",
   ),
-  supervisor: "dr inż. Piotr Jóźwiak",
+  supervisor: "Piotr Jóźwiak",
 )
-#set cite(style: "chicago-author-date")
+#set cite(style: "gb-7714-2015-numeric")
 #show link: underline
 
 = Wstęp
@@ -81,19 +81,55 @@ zdalne sterowanie elementami wykonawczymi, np.: jazami, śluzami, elektrozaworam
 i pompami, w oparciu o zbierane dane.
 
 == Główne założenia i ograniczenia projektowe
-=== Komunikacja i regulacje prawne
-Protokół LoRaWAN w Europie wykorzystuje nielicencjonowane pasmo radiowe 868 MHz,
-którego wykorzystanie jest prawnie znacząco ograniczone. Z tego powodu w
-projekcie wykorzystano format wymiany danych _Protocol Buffers_, który pozwala
-na efektywną serializację wiadomości strukturalnych @viotti2022benchmark, aby
-zmaksymalizować wydajność systemu i zminimalizować czas transmisji.
-=== Zasilanie i zasięg
+Protokół LoRaWAN w Europie wykorzystuje nielicencjonowane pasmo radiowe 868
+MHz@lorawan_spec, którego wykorzystanie jest prawnie znacząco ograniczone. Z
+tego powodu w projekcie wykorzystano format wymiany danych _Protocol Buffers_,
+który pozwala na efektywną serializację wiadomości strukturalnych
+@viotti2022benchmark, aby zmaksymalizować wydajność systemu i zminimalizować
+czas transmisji.
+
 Założono zasięg transmisji do 3 km na terenie otwartym przy braku dostępu do
 sieci energetycznej -- urządzenia końcowe mogą wykorzystywać tryby głębokiego
 uśpienia oraz być przez długi czas zasilane bateryjnie.
-=== Otwartość
+
 System jest otwarty i pozwala na jego proste rozbudowywanie oraz wytwarzanie i
 dodawanie urządzeń końcowych dostosowanych do konkretnych potrzeb użytkowników.
+
+= Rezultaty
+W projekcie udało zrealizować się wszystkie planowane funkcjonalności systemu.
+
+== Urządzenia końcowe
+W ramach projektu wytworzony został framework do tworzenia oprogramowania dla
+urządzeń końcowych zgodnego z pełnym systemem _loris_. Framework oparty jest na
+systemie operacyjnym czasu rzeczywistego Zephyr.
+
+== Bramka LoRaWAN
+Jednym z kluczowych elementów zaprojektowanym w ramach projektu jest bramka
+LoRaWAN oparta na otwartoźródłowym oprogramowaniu ChirpStack działająca na
+komputerze jednopłytkowym RaspberryPi 5. Aby umożliwić pracę z technologią radiową LoRa do
+komputera dołączony został moduł WM1302 firmy Seeed Studio oparty na chipie
+Semtech SX1302.
+
+Do obsługi bramki zostały wytworzone obrazy Docker oraz skrypty wdrażające, aby
+umożlwić szybkie i powtarzalne uruchamianie pełnego środowiska bramki, na które
+składa się przede wszystkim oprogramowanie ChirpStack MQTT Forwarder oraz
+ChirpStack Concentratord@chirpstack_docs.
+
+Dodatkowo, w celach wdrożeniowych, została zaprojektowana i wydrukowana w
+technologii 3D obudowa do komputera bramki. Autorski projekt uwzględnia potrzeby
+komunikacji radiowej LoRa oraz systemu GPS wykorzystywanego przez
+LoRaWAN@lorawan_spec.
+
+#align(center)[
+  #figure(supplement: [Rysunek], caption: [Wytworzona obudowa komputera
+    bramki])[
+    #image("assets/placeholder.svg", width: 50%)
+  ]
+]
+
+// TODO: wymyślić lepszą nazwę
+== Aplikacja
+
 
 #bibliography("bibliography.bib", full: true)
 
