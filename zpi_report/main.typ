@@ -134,8 +134,7 @@ dźwiękowego:
 - LEDy w kolorach: zielonym, żółtym i czerwonym,
 - brzęczek.
 
-W celu zabezpieczenia urządzenia została również przygotowana i wydrukowana w
-technologii 3D obudowa.
+W celu zabezpieczenia urządzenia została również wytworzona obudowa w technologii druku 3D.
 #align(center)[
   #figure(
     supplement: [Rysunek],
