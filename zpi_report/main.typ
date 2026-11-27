@@ -156,6 +156,83 @@ minimalny narzut pamięciowy (zarówno w skompilowanym artefakcie binarnym
 projektu, jak i pamięci operacyjnej)@nanopb_docs, zatem system może być
 wykorzystany również na urządzeniach o bardzo ograniczonych zasobach.
 
+=== Przykłady urządzeń końcowych
+Aby w pełni przetestować wdrożenie projektu, przygotowane zostały trzy
+przykładowe jednostki końcowe. Demonstrują one najważniejsze możliwości systemu
+oraz ogólny sposób integracji urządzeń z jego pozostałymi elementami. Do każdej
+z nich wykonane zostały schematy elektroniczne oraz przykładowe aplikacje w
+systemie Zephyr, dzięki czemu mogą również służyć jako wzorce wytwarzania
+własnych urządzeń dla potencjalnych użytkowników systemu.
+
+==== Monitor roślin
+Celem tego urządzenia jest monitorowanie parametrów środowiskowych roślin, aby
+na ich podstawie system mógł podejmować decyzje, jak np. automatyzacja
+podlewania.
+
+#align(center)[
+  #figure(supplement: [Rysunek], caption: [Schemat elektroniczny monitora
+    roślin])[
+    #image("assets/plant_monitor_schematic.pdf")
+  ]
+]
+
+Urządzenie udostępnia dane z następujących podzespołów:
+- czujnika temperatury otoczenia,
+- sondy temperatury gleby,
+- czujnika wilgotności gleby.
+
+Dodatkowo, układ zapewnia poniższe elementy wykonawcze, które mogą być sterowane
+przez serwer automatyzacji i służyć m.in. do alarmowania wizualnego i
+dźwiękowego:
+- LEDy w kolorach: zielonym, żółtym i czerwonym,
+- brzęczek.
+
+W celu zabezpieczenia urządzenia została również wytworzona obudowa w technologii druku 3D.
+#align(center)[
+  #figure(
+    supplement: [Rysunek],
+    caption: [Układ monitora (po lewej); w obudowie (po prawej)],
+  )[
+    #columns(2)[
+      #image("assets/placeholder.svg")
+      #colbreak()
+      #image("assets/placeholder.svg")
+    ]
+  ]
+]
+
+==== Irygator roślin
+Główną odpowiedzialnością tego urządzenia jest irygacja roślin za pomocą pompy
+perystaltycznej w sposób zautomatyzowany przez system. Jego praca jest ściśle
+powiązana z monitorem roślin -- na podstawie mierzonych przez niego warunków
+środowiskowych silnik automatyzacji podejmuje decyzje o podlewaniu.
+
+#align(center)[
+  #figure(
+    supplement: [Rysunek],
+    caption: [Schemat elektroniczny irygatora roślin],
+  )[
+    #image("assets/plant_irrigator_schematic.pdf")
+  ]
+]
+
+Układ nie udostępnia żadnych danych, a jedynie zapewnia możliwość uruchomienia
+pompy perystaltycznej na określony czas. Do urządzenia, podobnie jak w przypadku
+monitora, również została zaprojektowana obudowa.
+
+#align(center)[
+  #figure(
+    supplement: [Rysunek],
+    caption: [Układ irygatora (po lewej); w obudowie (po prawej)],
+  )[
+    #columns(2)[
+      #image("assets/placeholder.svg")
+      #colbreak()
+      #image("assets/placeholder.svg")
+    ]
+  ]
+]
+
 == Bramka LoRaWAN
 Jednym z kluczowych elementów zaprojektowanych w ramach projektu jest bramka
 LoRaWAN oparta na otwartoźródłowym oprogramowaniu ChirpStack działająca na
