@@ -145,7 +145,7 @@ Dla potrzeb tego komponentu opracowany został dodatkowo moduł pamięci nieulot
 bazowany na systemie Zephyr Memory Storage@zephyr_zms_docs. Wyróżnia się on
 wykorzystaniem wyrównywania zużycia (ang. _wear leveling_), co zapewnia
 najwyższą możliwą żywotność różnych rodzajów pamięci, dzięki czemu framework
-odpowiednio wspiera różne systemy na czipie (ang. _SoC_ -- _system on a chip_) i
+odpowiednio wspiera różne systemy na chipie (ang. _SoC_ -- _system on a chip_) i
 płytki uruchomieniowe.
 
 === Moduł kodeku wiadomości
